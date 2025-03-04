@@ -21,7 +21,7 @@ const Button = ({
   const baseStyles = "relative overflow-hidden rounded-full font-medium transition-all duration-300 flex items-center justify-center";
   
   const variantStyles = {
-    primary: "bg-gold text-navy hover:bg-gold-light shadow-lg hover:shadow-gold/20",
+    primary: "bg-gradient-to-r from-gold-dark via-gold to-gold-light text-navy hover:shadow-lg hover:shadow-gold/20 border border-gold/30",
     secondary: "bg-navy-light text-white border border-gold/20 hover:border-gold/50",
     outline: "border-2 border-gold text-gold hover:bg-gold/10"
   };

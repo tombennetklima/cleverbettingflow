@@ -69,10 +69,11 @@ const DecorativeElement = ({
   if (variant === "filigree") {
     return (
       <div className={cn("relative", className)}>
-        <div className="absolute w-28 h-28 border border-gold/10 rounded-full animate-rotate-slow"></div>
-        <div className="absolute w-20 h-20 border border-white/5 rounded-full animate-rotate-slow" style={{ animationDirection: 'reverse' }}></div>
-        <div className="absolute w-12 h-12 border border-dashed border-gold/20 rounded-full animate-pulse-light"></div>
-        <div className="absolute w-1 h-1 bg-gold/40 rounded-full"></div>
+        <div className="absolute w-full h-full border border-gold/10 rounded-full animate-rotate-slow"></div>
+        <div className="absolute w-[75%] h-[75%] left-[12.5%] top-[12.5%] border border-white/5 rounded-full animate-rotate-slow" style={{ animationDirection: 'reverse' }}></div>
+        <div className="absolute w-[50%] h-[50%] left-[25%] top-[25%] border border-dashed border-gold/20 rounded-full animate-pulse-light"></div>
+        <div className="absolute w-[20%] h-[20%] left-[40%] top-[40%] border border-white/10 rounded-full"></div>
+        <div className="absolute w-1 h-1 left-[calc(50%-2px)] top-[calc(50%-2px)] bg-gold/40 rounded-full"></div>
       </div>
     );
   }
