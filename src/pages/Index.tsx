@@ -1,9 +1,9 @@
-
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import { Sparkles, ChevronDown, Check } from "lucide-react";
 import DecorativeElement from "@/components/DecorativeElement";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -28,8 +28,11 @@ const Index = () => {
         </div>
       </div>
       
+      {/* Navbar */}
+      <Navbar />
+      
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col justify-center items-center px-4 pt-20 pb-32">
+      <section id="home" className="relative min-h-screen flex flex-col justify-center items-center px-4 pt-20 pb-32">
         {/* Logo and sparkle */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -84,7 +87,7 @@ const Index = () => {
       </section>
       
       {/* Introduction Section with 3D Card Effect */}
-      <section className="relative py-20 px-4">
+      <section id="about" className="relative py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -167,7 +170,7 @@ const Index = () => {
       </section>
       
       {/* How it Works Section */}
-      <section className="relative py-20 px-4 bg-gradient-to-b from-navy to-navy-dark">
+      <section id="system" className="relative py-20 px-4 bg-gradient-to-b from-navy to-navy-dark">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -248,7 +251,7 @@ const Index = () => {
       </section>
       
       {/* Stats Section */}
-      <section className="relative py-20 px-4">
+      <section id="stats" className="relative py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div
