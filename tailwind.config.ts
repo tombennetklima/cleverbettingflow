@@ -63,15 +63,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				navy: {
-					DEFAULT: '#0A1C3F',
-					light: '#1C3668',
-					dark: '#060F24'
+				// Replace navy colors with brown/beige/sand colors
+				brown: {
+					DEFAULT: '#8B6E4E',
+					light: '#A58D6E', 
+					dark: '#5D4A34'
 				},
-				gold: {
-					DEFAULT: '#D4AF37',
-					light: '#E6C767',
-					dark: '#B3901A'
+				sand: {
+					DEFAULT: '#E2D1C3',
+					light: '#F1E9E0',
+					dark: '#C8B8AA'
+				},
+				beige: {
+					DEFAULT: '#E6D7C2',
+					light: '#F2EAE0',
+					dark: '#C7B299'
 				}
 			},
 			borderRadius: {

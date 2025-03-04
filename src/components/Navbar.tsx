@@ -44,7 +44,7 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-white/70 hover:text-gold transition-colors text-sm font-medium"
+              className="text-brown-dark/70 hover:text-brown transition-colors text-sm font-medium"
             >
               {link.name}
             </a>
@@ -62,7 +62,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-white p-1 focus:outline-none"
+          className="md:hidden text-brown-dark p-1 focus:outline-none"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
@@ -75,13 +75,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-navy-dark/95 backdrop-blur-lg border-t border-white/10">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-sand/95 backdrop-blur-lg border-t border-brown/10">
           <div className="px-4 py-5 space-y-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block text-white/80 hover:text-gold py-2 transition-colors"
+                className="block text-brown-dark/80 hover:text-brown py-2 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.name}

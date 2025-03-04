@@ -40,7 +40,7 @@ html {
 .luxury-filigree-line {
   position: relative;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.2), transparent);
+  background: linear-gradient(to right, transparent, rgba(139, 110, 78, 0.2), transparent);
   margin: 2rem 0;
 }
 
@@ -51,7 +51,7 @@ html {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: rgba(212, 175, 55, 0.3);
+  background-color: rgba(139, 110, 78, 0.3);
   top: -2px;
 }
 
@@ -65,15 +65,15 @@ html {
 
 .luxury-circle {
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(139, 110, 78, 0.05);
   position: absolute;
   opacity: 0.1;
   pointer-events: none;
 }
 
-/* Golden text gradient */
+/* Brown text gradient */
 .gold-text {
-  background: linear-gradient(135deg, #DCBB65 0%, #E6D191 50%, #D4AF37 100%);
+  background: linear-gradient(135deg, #A58D6E 0%, #C8B8AA 50%, #8B6E4E 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -82,8 +82,8 @@ html {
 /* Luxury card hover effect */
 .luxury-card {
   position: relative;
-  background: rgba(10, 28, 63, 0.5);
-  border: 1px solid rgba(212, 175, 55, 0.1);
+  background: rgba(226, 209, 195, 0.5);
+  border: 1px solid rgba(139, 110, 78, 0.1);
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -98,20 +98,20 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+  background: linear-gradient(135deg, rgba(139, 110, 78, 0.05) 0%, transparent 50%);
   pointer-events: none;
 }
 
 .luxury-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  border-color: rgba(212, 175, 55, 0.2);
+  border-color: rgba(139, 110, 78, 0.2);
 }
 
 /* Elegant filigree divider */
 .filigree-line {
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.2), transparent);
+  background: linear-gradient(to right, transparent, rgba(139, 110, 78, 0.2), transparent);
   position: relative;
 }
 
@@ -122,7 +122,7 @@ html {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: rgba(212, 175, 55, 0.4);
+  background-color: rgba(139, 110, 78, 0.4);
   top: -1.5px;
 }
 
@@ -136,8 +136,7 @@ html {
 
 /* Navbar styles */
 .nav-blur {
-  background-color: rgba(8, 24, 58, 0.7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(226, 209, 195, 0.7);
+  border-bottom: 1px solid rgba(139, 110, 78, 0.05);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
-
