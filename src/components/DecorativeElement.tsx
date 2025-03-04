@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 
 interface DecorativeElementProps {
-  variant?: "dots" | "circle" | "lines" | "ring";
+  variant?: "dots" | "circle" | "lines" | "ring" | "filigree";
   className?: string;
 }
 
@@ -17,7 +17,7 @@ const DecorativeElement = ({
         {[...Array(9)].map((_, i) => (
           <div 
             key={i} 
-            className="w-1.5 h-1.5 rounded-full bg-primary/30"
+            className="w-1.5 h-1.5 rounded-full bg-gold/40"
             style={{ 
               animationDelay: `${i * 0.1}s`,
               opacity: 0.3 + (i % 3) * 0.2
@@ -32,7 +32,7 @@ const DecorativeElement = ({
     return (
       <div 
         className={cn(
-          "rounded-full bg-gradient-to-tr from-accent/20 to-primary/20 animate-pulse-light", 
+          "rounded-full bg-gradient-to-tr from-navy-light/40 to-gold/5 animate-pulse-light", 
           className
         )}
       ></div>
@@ -45,7 +45,7 @@ const DecorativeElement = ({
         {[...Array(3)].map((_, i) => (
           <div 
             key={i}
-            className="h-0.5 bg-primary/20 rounded-full"
+            className="h-0.5 bg-gradient-to-r from-transparent via-gold/30 to-transparent rounded-full"
             style={{ 
               width: `${60 + i * 10}%`,
               opacity: 0.3 + i * 0.2
@@ -59,9 +59,20 @@ const DecorativeElement = ({
   if (variant === "ring") {
     return (
       <div className={cn("relative", className)}>
-        <div className="absolute inset-0 rounded-full border-2 border-primary/10 animate-pulse-light"></div>
-        <div className="absolute inset-[3px] rounded-full border border-primary/20"></div>
-        <div className="absolute inset-[6px] rounded-full border border-dashed border-primary/10"></div>
+        <div className="absolute inset-0 rounded-full border border-gold/10 animate-pulse-light"></div>
+        <div className="absolute inset-[3px] rounded-full border border-white/10"></div>
+        <div className="absolute inset-[6px] rounded-full border border-dashed border-gold/5"></div>
+      </div>
+    );
+  }
+  
+  if (variant === "filigree") {
+    return (
+      <div className={cn("relative", className)}>
+        <div className="absolute w-28 h-28 border border-gold/10 rounded-full animate-rotate-slow"></div>
+        <div className="absolute w-20 h-20 border border-white/5 rounded-full animate-rotate-slow" style={{ animationDirection: 'reverse' }}></div>
+        <div className="absolute w-12 h-12 border border-dashed border-gold/20 rounded-full animate-pulse-light"></div>
+        <div className="absolute w-1 h-1 bg-gold/40 rounded-full"></div>
       </div>
     );
   }

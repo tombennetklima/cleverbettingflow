@@ -17,14 +17,16 @@ const SectionHeading = ({
   className,
 }: SectionHeadingProps) => {
   return (
-    <div className={cn("space-y-3 max-w-3xl", center && "mx-auto text-center", className)}>
+    <div className={cn("space-y-4 max-w-3xl", center && "mx-auto text-center", className)}>
       {tag && (
-        <span className="inline-block text-sm font-medium text-accent/90 bg-accent/10 px-3 py-1 rounded-full animate-fade-in">
+        <span className="inline-block text-sm font-medium bg-gold/10 text-gold px-3 py-1 rounded-full">
           {tag}
         </span>
       )}
-      <h2 className="text-3xl md:text-4xl font-medium tracking-tight">{title}</h2>
-      {subtitle && <p className="text-lg text-muted-foreground">{subtitle}</p>}
+      <h2 className="text-3xl md:text-4xl font-medium font-['Playfair_Display'] tracking-tight">
+        <span className="golden-gradient">{title}</span>
+      </h2>
+      {subtitle && <p className="text-lg text-white/70">{subtitle}</p>}
     </div>
   );
 };

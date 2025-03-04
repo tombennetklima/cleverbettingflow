@@ -21,9 +21,9 @@ const Button = ({
   const baseStyles = "relative overflow-hidden rounded-full font-medium transition-all duration-300 flex items-center justify-center";
   
   const variantStyles = {
-    primary: "bg-primary text-primary-foreground hover:brightness-110 shadow-md hover:shadow-lg",
-    secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-    outline: "border-2 border-primary text-primary hover:bg-primary/5"
+    primary: "bg-gold text-navy hover:bg-gold-light shadow-lg hover:shadow-gold/20",
+    secondary: "bg-navy-light text-white border border-gold/20 hover:border-gold/50",
+    outline: "border-2 border-gold text-gold hover:bg-gold/10"
   };
   
   const sizeStyles = {

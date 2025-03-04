@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 63% 14%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 63% 18%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 63% 14%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 222 90% 52%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 46 68% 52%;
+    --primary-foreground: 220 63% 14%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 30% 25%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 25% 30%;
+    --muted-foreground: 220 10% 80%;
 
-    --accent: 221 83% 53%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 46 68% 52%;
+    --accent-foreground: 220 63% 14%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222 90% 52%;
+    --border: 220 25% 25%;
+    --input: 220 25% 25%;
+    --ring: 46 68% 52%;
 
     --radius: 0.8rem;
   }
@@ -84,7 +84,7 @@
 
 @layer components {
   .bg-glass {
-    @apply bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg;
+    @apply bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg;
   }
   
   .shimmer {
@@ -97,6 +97,31 @@
   
   .heading-highlight::after {
     content: '';
-    @apply absolute w-full h-[6px] bg-accent bg-opacity-30 -bottom-1 left-0 rounded-full;
+    @apply absolute w-full h-[6px] bg-gold bg-opacity-80 -bottom-1 left-0 rounded-full;
+  }
+  
+  .luxury-card {
+    @apply relative bg-navy-light bg-opacity-30 backdrop-filter backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden;
+  }
+  
+  .luxury-card::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full bg-gradient-to-br from-gold/5 to-transparent opacity-70 pointer-events-none;
+  }
+  
+  .filigree-line {
+    @apply h-px bg-gradient-to-r from-transparent via-white/20 to-transparent my-6;
+  }
+  
+  .filigree-circle {
+    @apply absolute rounded-full border border-white/10 opacity-20;
+  }
+  
+  .golden-gradient {
+    @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light text-transparent bg-clip-text;
+  }
+  
+  .navy-gradient {
+    @apply bg-gradient-to-r from-navy-dark via-navy to-navy-light;
   }
 }
